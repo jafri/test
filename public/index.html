@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Bloks.io | Fastest EOS Block Explorer and Wallet | EOS Cafe & HKEOS</title>
+    <meta name="description" content="Fastest EOS block explorer and wallet with transactions, accounts, tokens, prices and scatter/lynx integrations for the EOS blockchain.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <meta name="author" content="EOS Cafe Block" />
+    <meta name="copyright" content="EOS Cafe Block" />
+    <meta name="application-name" content="Bloks.io" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <!-- For Facebook -->
+    <meta property="og:title" content="Bloks.io | Fastest EOS Block Explorer and Wallet - EOS Cafe & HKEOS" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://bloks.io/img/bloks_logomark.png" />
+    <meta property="og:url" content="https://bloks.io" />
+    <meta property="og:description" content="Fastest and most complete EOS block explorer and wallet." />
+
+    <!-- For Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Bloks.io | Fastest EOS Block Explorer - EOS Cafe & HKEOS" />
+    <meta name="twitter:description" content="Bloks.io is a full block explorer and wallet for the EOS blockchain with transactions, accounts, tokens, prices and scatter, lynx and ledger integrations." />
+    <meta name="twitter:image" content="https://bloks.io/img/bloks_logomark.png" />
+
+    <!-- css -->
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="<%= BASE_URL %>css/semantic.min.css">
+    <link id="pagestyle2" rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>css/app.css">
+
+    <!-- API -->
+    <link rel="preconnect" href="https://eos.greymass.com">
+    <link rel="preconnect" href="https://www.api.bloks.io">
+    <link rel="preconnect" href="https://www.api.bloks.io/socket.io">
+    <link rel="preconnect" href="https://www.api.bloks.io/display">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+
+    <!--Favicon Fonts-->
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-MZ7PSV4');
+    </script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" async></script>
+    <!-- End Google Tag Manager -->
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZ7PSV4"
+        height="0" width="0" style="display:none;visibility:hidden">
+      </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Lazy load -->
+    <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+
+    <!-- Vue JS App -->
+    <div id="app"></div>
+  </body>
+</html>

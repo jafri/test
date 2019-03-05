@@ -1,0 +1,275 @@
+/* General rules*/
+.app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+body {
+  background: #f9fbff;
+  background: -webkit-linear-gradient(to right, rgb(127, 127, 213, 0.1), rgb(134, 168, 231, 0.1), rgb(145, 234, 228, 0.1));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgb(127, 127, 213, 0.1), rgb(134, 168, 231, 0.1), rgb(145, 234, 228, 0.1)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h2, .content {
+  margin-top: 0;
+  padding: 15px 0;
+  color:  #424242;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.ui.segment {
+  border:hidden;
+}
+
+/*Custom Tabs for Account page */
+
+.tabs-component-tabs {
+  border: solid 1px #ddd;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  padding-left: 15px;
+  /*padding-top:16px;*/
+}
+
+@media (min-width: 700px) {
+  .tabs-component-tabs {
+    border: 0;
+    align-items: stretch;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: -1px;
+  }
+}
+
+.tabs-component-tab {
+  color: #999;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 0;
+  list-style: none;
+}
+
+.tabs-component-tab:not(p) {
+  border-bottom: dotted 1px #ddd;
+}
+
+.tabs-component-tab:hover {
+  color: #666;
+}
+
+.tabs-component-tab.is-active {
+  color: #000;
+}
+
+.tabs-component-tab.is-disabled * {
+  color: #cdcdcd;
+  cursor: not-allowed !important;
+}
+
+@media (min-width: 700px) {
+  .tabs-component-tab {
+    background-color: #fff;
+    border: solid 1px #ddd;
+    margin-right: .25em;
+    transform: translateY(2px);
+    transition: transform .3s ease;
+  }
+
+.tabs-component-tab.is-active {
+    border-bottom: solid 1px #fff;
+    border-top: solid 2px #02AAEA;
+    transform: translateY(0);
+  }
+}
+
+.tabs-component-tab-a {
+  align-items: center;
+  color: inherit;
+  display: flex;
+  padding: .75em 1em;
+  text-decoration: none;
+}
+
+/* Gap around Table in Tab*/
+
+.tabs-component-panels {
+  padding: 1em 16px;
+}
+
+@media (min-width: 700px) {
+  .tabs-component-panels {
+    border-top-left-radius: 0;
+    background-color: #fff;
+    border-top: solid 1px #ddd;
+    padding: 16px 16px;
+  }
+}
+
+/* Tables */
+
+table {
+  margin-bottom: 16px;
+}
+
+tbody, thead {
+  table-layout: fixed;
+}
+
+td, th {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+#table-wrapper {
+    min-width: 250px;
+    overflow: auto;
+}
+
+#table {
+    padding: 14px;
+}
+
+#table-title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.table-header {
+  padding-top: 5px !important;
+}
+
+.table-header-text {
+  color: #243b55;
+}
+
+.info {
+    margin-top: 16px;
+}
+
+#info {
+  margin-top:16px;
+}
+
+/*Footer*/
+/*Labels*/
+.ui.blue.label {
+  cursor: default;
+}
+
+.search-button {
+  width:85px;
+  border-radius: 0;
+}
+
+/* Top containers */
+
+#top-container{
+  padding-top: 172px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+    #top-container {
+        padding-top: 148px;
+        padding-bottom: 50px;
+    }
+}
+
+#top-container-home{
+  padding-top: 157px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+    #top-container-home {
+        padding-top: 135px;
+        padding-bottom: 50px;
+    }
+}
+
+/* Rows remove padding*/
+
+.ui.grid>.row {
+  padding-bottom:0;
+  padding-top:0;
+}
+
+/*Mobile Menu search button*/
+
+.search-button {
+  width:85px;
+}
+
+/* Menu */
+
+#tab, #tab-search {
+  height:100%;
+}
+
+#tab:hover {
+  border-bottom: solid 2px #0984e3;
+}
+
+#logo {
+  height:50px;
+  width: auto;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.inline-logo, .inline-logo-mobile {
+  margin-bottom: 0px;
+}
+
+.inline-logo-mobile {
+  font-size:0.8em;
+}
+
+.ui.menu.item {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+#navbar {
+    background-color: white;
+    height: 60px;
+}
+
+#inline-image {
+    margin-top: 11px;
+}
+
+/* Overflow breaking for td */
+
+.special-td-2 {
+  display: inline-block;
+  min-width: 100%;
+  white-space: normal;
+  word-break: break-all;
+}
+
+/* Hidden on Mobile */
+
+@media only screen and (max-width: 767px) {
+  [class*="mobile hidden"],
+  [class*="tablet only"]:not(.mobile),
+  [class*="computer only"]:not(.mobile),
+  [class*="large monitor only"]:not(.mobile),
+  [class*="widescreen monitor only"]:not(.mobile),
+  [class*="or lower hidden"] {
+  display: none !important;
+  }
+}
+
+/* Buttons next to headers */
+
+#inline-button {
+  margin-top: 10px;
+}
