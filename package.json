@@ -16,7 +16,7 @@
   "dependencies": {
     "@feathersjs/feathers": "^3.2.3",
     "@feathersjs/socketio-client": "^1.1.5",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bignumber.js": "^8.0.1",
     "eos-transit": "^1.0.0",
     "eos-transit-ledger-provider": "^1.0.0",
